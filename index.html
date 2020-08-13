@@ -1,0 +1,51 @@
+<html>
+    <head>
+    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+</head>
+    <div>
+        Readme:<br />
+        <ul>
+            <li>Open this in Google chrome and navigate to <a href="chrome://flags/#enable-experimental-web-platform-features">chrome://flags/#enable-experimental-web-platform-features</a> and enable "enable-experimental-web-platform-features", now you should be able to connect to the Arduino.</li>
+            <li>Connect to the Arduino</li>    <button onclick="clickConnect()">Connect</button>
+            <li>To change camera go to <a href="chrome://settings/content/camera">chrome://settings/content/camera</a> and select the USB camera connected to the seedSize device.</li>
+            <li></li>
+        </ul>
+
+    </div>
+<div>
+    Source video:
+    <video id="videoInput" width="320" height="240" autoplay></video>
+</div><div>
+    Output video:
+    <canvas id="canvasOutput" width="320" height="240"></canvas></div><div>
+    Threshold:
+<input type="range" id="threshold" min="0.0" max="255.0" />
+</div>
+<div>
+    Width: <span id="seedWidth"></span><br />
+    Height: <span id="seedHeight"></span>
+</div>
+
+<div>
+    Switch 1:<br />
+    Upper limit length: <input type="number" value="40" id="s1_max">px<br />
+    Lower limit length: <input type="number" value="20" id="s1_min">px<br />
+    delay open: <input type="number" value="2000" id="s1_delay">ms
+
+</div>
+<div>
+    Switch 2:<br />
+    Upper limit length: <input type="number" value="60" id="s1_max">px<br />
+    Lower limit length: <input type="number" value="50" id="s1_min">px<br />
+    delay open: <input type="number" value="2000" id="s2_delay">ms
+</div>
+<div id="box">
+    Communication<br />
+    Servo 1:
+    Servo 2:
+</div>
+<script src="opencv.js" type="text/javascript"></script>
+<!--<script src="j5.js" type="text/javascript"></script>-->
+
+<script type="text/javascript" src="index.js"></script>
+</html>
