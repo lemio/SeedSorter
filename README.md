@@ -7,8 +7,8 @@ A system to sort seeds on size and shape
 
 ## todo
 
-Arduino code and protocol in between the web interface and Arduino
-Make a proper layout/UI
-Testing with the real seeds
+- Arduino code and protocol in between the web interface and Arduino
+- Make a proper layout/UI
+- Testing with the real seeds
 
 
